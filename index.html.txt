@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scrum Elevate | IT Services &amp; Consulting</title>
+<meta name="description" content="Scrum Elevate delivers IT services, Agile coaching, and Scrum training that help teams ship with clarity, confidence, and measurable impact." />
+<link rel="icon" type="image/png" href="logo.png" />
+
+<script>
+  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          navy: { 50:'#f0f4fa',100:'#dbe4f0',200:'#b9c9e0',300:'#8ea6c9',400:'#5f7fac',500:'#3d5f8f',600:'#2a4a75',700:'#1e3a5f',800:'#132a47',900:'#0B1F3A' },
+          brand: { 50:'#eef8f0',100:'#d6efdb',200:'#aedfba',300:'#7fcb92',400:'#4fb46b',500:'#2f9a4d',600:'#1E7B34',700:'#186328',800:'#134e20',900:'#0f3d1a' },
+          gold: { 400:'#e0c65a',500:'#C9A227',600:'#a8851c' }
+        }
+      }
+    }
+  }
+</script>
+</head>
+
+<body class="bg-white text-navy-900 antialiased dark:bg-navy-900 dark:text-slate-100">
+
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-40 border-b border-slate-200 bg-white/85 backdrop-blur dark:border-slate-800 dark:bg-navy-900/85">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="logo.png" alt="Scrum Elevate logo" class="h-12 w-12 rounded-full object-contain" onerror="this.style.display='none'" />
+      <span class="text-lg font-bold tracking-tight">Scrum<span class="text-brand-600">Elevate</span></span>
+    </a>
+
+    <nav class="hidden items-center gap-6 md:flex">
+      <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400">Services</a>
+      <a href="#testimonials" class="text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400">Testimonials</a>
+      <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400">Contact</a>
+      <button data-theme-toggle class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">Dark</button>
+    </nav>
+
+    <div class="flex items-center gap-2 md:hidden">
+      <button data-theme-toggle class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium dark:border-slate-700">Dark</button>
+      <button id="menuBtn" aria-label="Toggle menu" class="rounded-lg border border-slate-300 p-2 dark:border-slate-700">
+        <span class="block h-0.5 w-5 bg-current"></span>
+        <span class="mt-1 block h-0.5 w-5 bg-current"></span>
+        <span class="mt-1 block h-0.5 w-5 bg-current"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden border-t border-slate-200 px-4 py-4 md:hidden dark:border-slate-800">
+    <nav class="flex flex-col gap-4">
+      <a href="#services" class="text-sm font-medium text-slate-700 dark:text-slate-200">Services</a>
+      <a href="#testimonials" class="text-sm font-medium text-slate-700 dark:text-slate-200">Testimonials</a>
+      <a href="#contact" class="text-sm font-medium text-slate-700 dark:text-slate-200">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 via-white to-white dark:from-navy-800 dark:via-navy-900 dark:to-navy-900"></div>
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:py-28">
+      <div>
+        <p class="mb-4 inline-flex rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-sm font-medium text-brand-700 dark:border-brand-800 dark:bg-navy-800 dark:text-brand-300">
+          Learn. Apply. Elevate.
+        </p>
+        <h1 class="text-4xl font-bold tracking-tight md:text-6xl">
+          Elevate your teams with <span class="text-brand-600">Scrum</span> that actually works.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-300">
+          Scrum Elevate delivers IT services, Agile coaching, and Scrum training that help teams ship with clarity, confidence, and measurable impact.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-brand-700">Book a discovery call</a>
+          <a href="https://wa.me/918317244808?text=Hi%20Scrum%20Elevate%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-navy-800">
+        <div class="grid gap-4">
+          <div class="rounded-2xl bg-slate-50 p-5 dark:bg-navy-900">
+            <h3 class="font-semibold">Sprint clarity</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Align goals, backlog, and stakeholders.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-5 dark:bg-navy-900">
+            <h3 class="font-semibold">Team health</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Improve collaboration and ownership.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-5 dark:bg-navy-900">
+            <h3 class="font-semibold">Delivery rhythm</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Create a sustainable pace of improvement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="mx-auto max-w-6xl px-4 py-20">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Services built for real teams</h2>
+      <p class="mt-4 text-slate-600 dark:text-slate-300">Choose focused support that meets your team where it is today.</p>
+    </div>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <h3 class="text-xl font-semibold">Scrum training</h3>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Role-based workshops for Product Owners, Scrum Masters, and teams.</p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <h3 class="text-xl font-semibold">Agile coaching</h3>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Hands-on coaching for ceremonies, planning, and continuous improvement.</p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 p-6 dark:border-slate-800">
+        <h3 class="text-xl font-semibold">IT services &amp; consulting</h3>
+        <p class="mt-3 text-slate-600 dark:text-slate-300">Practical delivery support to remove blockers and improve flow across teams.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="border-y border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-navy-800">
+    <div class="mx-auto max-w-6xl px-4 py-20">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">What teams say</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <figure class="rounded-2xl bg-white p-6 shadow-sm dark:bg-navy-900">
+          <blockquote class="text-slate-700 dark:text-slate-200">“The coaching helped our team turn vague goals into a clear, workable sprint plan.”</blockquote>
+          <figcaption class="mt-4 text-sm">
+            <div class="font-semibold">Client name</div>
+            <div class="text-slate-500 dark:text-slate-400">Engineering Manager</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-white p-6 shadow-sm dark:bg-navy-900">
+          <blockquote class="text-slate-700 dark:text-slate-200">“Our ceremonies became shorter, more focused, and much more useful for the team.”</blockquote>
+          <figcaption class="mt-4 text-sm">
+            <div class="font-semibold">Client name</div>
+            <div class="text-slate-500 dark:text-slate-400">Product Owner</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-white p-6 shadow-sm dark:bg-navy-900">
+          <blockquote class="text-slate-700 dark:text-slate-200">“We finally have a shared language for improvement and delivery across the group.”</blockquote>
+          <figcaption class="mt-4 text-sm">
+            <div class="font-semibold">Client name</div>
+            <div class="text-slate-500 dark:text-slate-400">Delivery Lead</div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-20">
+    <div class="grid gap-10 rounded-3xl border border-slate-200 p-8 md:grid-cols-2 md:p-12 dark:border-slate-800">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight md:text-4xl">Let’s talk about your team</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-300">Reach out by email or WhatsApp to discuss your goals and next steps.</p>
+        <div class="mt-6 space-y-3 text-sm">
+          <p><span class="font-semibold">Email:</span> <a class="text-brand-600 hover:underline" href="mailto:info@scrumelevate.com">info@scrumelevate.com</a></p>
+          <p><span class="font-semibold">Phone:</span> <a class="text-brand-600 hover:underline" href="tel:+918317244808">+91 83172 44808</a></p>
+          <p><span class="font-semibold">WhatsApp:</span> <a class="text-brand-600 hover:underline" href="https://wa.me/918317244808?text=Hi%20Scrum%20Elevate%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer">Start a chat</a></p>
+        </div>
+      </div>
+
+      <form class="space-y-4" action="mailto:info@scrumelevate.com" method="post" enctype="text/plain">
+        <div>
+          <label class="mb-1 block text-sm font-medium" for="name">Name</label>
+          <input id="name" name="name" required class="w-full rounded-xl border border-slate-300 bg-transparent px-4 py-3 outline-none focus:border-brand-500 dark:border-slate-700" />
+        </div>
+        <div>
+          <label class="mb-1 block text-sm font-medium" for="email">Email</label>
+          <input id="email" name="email" type="email" required class="w-full rounded-xl border border-slate-300 bg-transparent px-4 py-3 outline-none focus:border-brand-500 dark:border-slate-700" />
+        </div>
+        <div>
+          <label class="mb-1 block text-sm font-medium" for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required class="w-full rounded-xl border border-slate-300 bg-transparent px-4 py-3 outline-none focus:border-brand-500 dark:border-slate-700"></textarea>
+        </div>
+        <button type="submit" class="w-full rounded-xl bg-brand-600 px-5 py-3 font-semibold text-white hover:bg-brand-700">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-slate-200 py-8 dark:border-slate-800">
+  <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between dark:text-slate-400">
+    <p>© <span id="year"></span> Scrum Elevate. All rights reserved.</p>
+    <p>
+      <a class="hover:text-brand-600" href="mailto:info@scrumelevate.com">info@scrumelevate.com</a>
+      <span class="mx-2">•</span>
+      <a class="hover:text-brand-600" href="tel:+918317244808">+91 83172 44808</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/918317244808?text=Hi%20Scrum%20Elevate%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+   target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+   class="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-green-500 px-5 py-3 font-semibold text-white shadow-lg hover:bg-green-600">
+  <svg viewBox="0 0 24 24" class="h-5 w-5 fill-current" aria-hidden="true">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.35-.49.05-1.11.07-1.79-.11-.41-.11-.94-.3-1.62-.59-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.38.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 1.99.88 2.13.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.12.57.17.28.75 1.24 1.61 2.01 1.11.99 2.05 1.3 2.34 1.44.29.14.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.38-.24.64-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/>
+  </svg>
+  WhatsApp
+</a>
+
+<script>
+  // Dark / light toggle
+  const themeBtns = document.querySelectorAll('[data-theme-toggle]');
+  function updateThemeLabels() {
+    const dark = document.documentElement.classList.contains('dark');
+    themeBtns.forEach(b => b.textContent = dark ? 'Light' : 'Dark');
+  }
+  themeBtns.forEach(btn => btn.addEventListener('click', () => {
+    const dark = document.documentElement.classList.toggle('dark');
+    localStorage.theme = dark ? 'dark' : 'light';
+    updateThemeLabels();
+  }));
+  updateThemeLabels();
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
